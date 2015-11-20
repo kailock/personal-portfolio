@@ -1,0 +1,8 @@
+[{"Course":"INFO 200","Title":"Intellectual Foundations of Informatics","Grade":"3.9"},
+  {"Course":"CSE 142","Title":"Computer Programming I","Grade":"3.3"},
+  {"Course":"CSE 143","Title":"Computer Programming II","Grade":"3.0"},
+  {"Course":"CSE 154","Title":"Web Programming","Grade":"3.2"},
+  {"Course":"INFO 424","Title":"Information Visualization and Aesthetics","Grade":"3.9"},
+  {"Course":"INFO 343","Title":"Client-Side Web Development","Grade":"TBD"},
+  {"Course":"INFO 340","Title":"Introduction to Relational Database Management Systems","Grade":"TBD"},
+  {"Course":"HCDE 455","Title":"User Interface Design","Grade":"TBD"}]

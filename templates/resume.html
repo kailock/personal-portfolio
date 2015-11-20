@@ -1,0 +1,22 @@
+<p>My file is {{url}}</p>
+
+<ul class="list-group">
+    <li ng-repeat="class in url" class="list-group-item">{{class.Course + ' ' + ' ' + class.Title}}</li>
+</ul>
+
+<!--<div ng-controller="ResumeController">-->
+    <!--<ul class="list-group" ng-repeat="class in classes">-->
+        <!--<li>{{class.Course}} + ' ' + {{class.Title}}</li>-->
+        <!--<li ng-repeat="class in classes" class="list-group-item" title="{{class.Course}}">{{class.Course + ' ' + ' ' + class.Title }}</li>-->
+    <!--</ul>-->
+
+    <!--&lt;!&ndash;<ul ng-repeat="item in items">&ndash;&gt;-->
+        <!--&lt;!&ndash;<li ng-repeat="(key, val) in item">&ndash;&gt;-->
+            <!--&lt;!&ndash;{{key}}: {{val}}&ndash;&gt;-->
+        <!--&lt;!&ndash;</li>&ndash;&gt;-->
+    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+<!--</div>-->
+
+<!--<li ng-repeat="track in tracks" class="list-group-item" title="{{track.name}}">-->
+    <!--<button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modal{{track.id}}" ng-click="play(track.preview_url)">Info</button>-->
+    <!--{{'   ' + track.name + ', by ' + track.artists[0].name}}-->
