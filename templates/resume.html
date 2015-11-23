@@ -1,22 +1,31 @@
-<p>My file is {{url}}</p>
+<h2>Relevant courses</h2>
+<!--<ul class="list-group">-->
+    <!--<li ng-repeat="class in courses" class="list-group-item">{{class.Course + ' ' + ' ' + class.Title + ' ' + class.Grade}}</li>-->
+<!--</ul>-->
 
-<ul class="list-group">
-    <li ng-repeat="class in url" class="list-group-item">{{class.Course + ' ' + ' ' + class.Title}}</li>
-</ul>
+<p><em>University of Washington | School of Information, Informatics | Class of 2017</em></p>
 
-<!--<div ng-controller="ResumeController">-->
-    <!--<ul class="list-group" ng-repeat="class in classes">-->
-        <!--<li>{{class.Course}} + ' ' + {{class.Title}}</li>-->
-        <!--<li ng-repeat="class in classes" class="list-group-item" title="{{class.Course}}">{{class.Course + ' ' + ' ' + class.Title }}</li>-->
-    <!--</ul>-->
+<table class="table table-bordered">
+    <tr class="table-head">
+        <td class="category">Course</td>
+        <td class="category">Title</td>
+        <td class="category">Grade Received</td>
+    </tr>
+    <tr ng-repeat="class in courses">
+        <td>{{class.Course}}</td>
+        <td>{{class.Title}}</td>
+        <td>{{class.Grade}}</td>
+    </tr>
+</table>
 
-    <!--&lt;!&ndash;<ul ng-repeat="item in items">&ndash;&gt;-->
-        <!--&lt;!&ndash;<li ng-repeat="(key, val) in item">&ndash;&gt;-->
-            <!--&lt;!&ndash;{{key}}: {{val}}&ndash;&gt;-->
-        <!--&lt;!&ndash;</li>&ndash;&gt;-->
-    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
-<!--</div>-->
-
-<!--<li ng-repeat="track in tracks" class="list-group-item" title="{{track.name}}">-->
-    <!--<button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modal{{track.id}}" ng-click="play(track.preview_url)">Info</button>-->
-    <!--{{'   ' + track.name + ', by ' + track.artists[0].name}}-->
+<h2>Resume</h2>
+<p>Click to enlarge</p>
+<img id="resume-sm" data-toggle="modal" data-target="#ResumePopup" src="img/resume.jpg" />
+<div id="ResumePopup" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <img id="resume-lg" src="img/resume.jpg" />
+        </div>
+    </div>
+</div>

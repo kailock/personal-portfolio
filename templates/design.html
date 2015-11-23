@@ -1,3 +1,34 @@
 <!-- Write an expression that shows your "about" variable -->
 
-<p>My about variable: {{about}}</p>
+<h2>Public Relations</h2>
+<p>This includes my work from being Communication's Director for Furmata a Cappella. Aside from running our
+social media outlets, I also did a lot of work on Adobe Illustrator.</p>
+<table class="table">
+    <tr class="table-head">
+        <td class="category">Thumbnail</td>
+        <td class="category">Title</td>
+        <td class="category">Description</td>
+    </tr>
+    <tr ng-repeat="project in furmata">
+        <td><img class="thumbnail" ng-src="{{project.Picture}}" /></td>
+        <td class="title">{{project.Title}}</td>
+        <td>{{project.Description}}</td>
+    </tr>
+</table>
+
+<h2>Infographic</h2>
+<p>This is work from the course INFO 424, where I learned about data visualization and how to create an
+    infographic.</p>
+
+<table class="table">
+    <tr class="table-head">
+        <td class="category">Thumbnail</td>
+        <td class="category">Title</td>
+        <td class="category">Description</td>
+    </tr>
+    <tr ng-repeat="display in info">
+        <td><a href="{{display.Url}}"><img class="thumbnail" ng-src="{{display.Picture}}" /></a></td>
+        <td class="title">{{display.Title}}</td>
+        <td>{{display.Description}}</td>
+    </tr>
+</table>

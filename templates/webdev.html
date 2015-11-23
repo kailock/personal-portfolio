@@ -1,1 +1,10 @@
-<img ng-src="{{url}}" />
+<h1>Web Development</h1>
+
+<p>Click the thumbnail to visit the website.</p>
+
+<table class="table">
+    <tr ng-repeat="site in websites">
+        <td><a href="{{site.Url}}"><img class="thumbnail" ng-src="{{site.Thumbnail}}" /></a></td>
+        <td>{{site.Description}}</td>
+    </tr>
+</table>

@@ -32,31 +32,31 @@ myApp.config(function($stateProvider) {
             controller: 'ResumeController'
         })
 
-        .state('contact', {
-            url:'/contact',
-            templateUrl: 'templates/contact.html',
-            controller: 'ContactController'
-        })
 })
 
-    .controller('HomeController', function($scope){
-        $scope.number = 11
+    .controller('HomeController', function($scope, $http){
+        $http.get('json/profile.json').success(function(data) {
+            $scope.profile = data;
+        })
     })
 
-    .controller('DesignController', function($scope){
-        $scope.about = "lulz"
+    .controller('DesignController', function($scope, $http){
+        $http.get('json/furmata.json').success(function(data) {
+            $scope.furmata = data;
+        });
+        $http.get('json/infographic.json').success(function(data) {
+            $scope.info = data;
+        });
     })
 
-    .controller('WebdevController', function($scope){
-        $scope.url = "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxQsAjBs4XP8pRpolc0sccO7TP_VyPme985MFZrtFVH8hB5ueGBA"
+    .controller('WebdevController', function($scope, $http){
+        $http.get('json/websites.json').success(function(data) {
+            $scope.websites = data;
+        })
     })
 
     .controller('ResumeController', function($scope,$http){
-        $http.get('json/classes.json').success(function(data) {
-            $scope.url = data;
+        $http.get('json/courses.json').success(function(data) {
+            $scope.courses = data;
         })
-    })
-
-    .controller('ContactController', function($scope){
-        $scope.url = "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxQsAjBs4XP8pRpolc0sccO7TP_VyPme985MFZrtFVH8hB5ueGBA"
     });

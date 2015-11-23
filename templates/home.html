@@ -1,3 +1,15 @@
 <!-- Write an expression to see your $scope.number variable -->
 
-<div> My number is {{number}}</div>
+<div id="content">
+    <h1>Kaitlin Lockhart</h1>
+
+    <div ng-repeat="data in profile">
+        <img id="headshot" src="{{data.Headshot}}" class="img-circle" />
+
+        <h4>{{data.Summary}}</h4>
+
+        <p>Cell: {{data.Phone}}</p>
+        <p>E-mail: {{data.Email}}</p>
+        <p>LinkedIn: {{data.Linkedin}}</p>
+    </div>
+</div>

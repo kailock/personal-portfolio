@@ -1,14 +1,72 @@
-header {
-    border-bottom:1px solid #e3e3e3;
-    text-align: center
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
+
+#header {
+    text-align: center;
+    padding: 1em;
+
+}
+
+#header a {
+    background-color: #db6262;
+    color: #fffbea;
+}
+
+#headshot {
+    height: 300px;
+}
+
+#content {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+body {
+    background-color: #fffbea;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.category {
+    color:  #fffbea;
+}
+
+#resume-sm {
+    height: 250px;
+}
+
+#resume-lg {
+    height: 850px;
+}
+
+.thumbnail {
+    height: 200px;
+}
+
+.table-head {
+    background-color: #db6262;
+}
+
+.title {
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    color: #9b4a46;
 }
 
 footer {
     position:fixed;
-    bottom:10px;
-    border-top:1px solid #e3e3e3;
+    background-color: #db6262;
+    bottom:5px;
+    border-top:3px solid #ffada9;
     width:100%;
     left:0px;
     text-align:center;
-    padding:10px;
+    padding:5px;
+}
+
+footer p {
+    color: #fffbea;
 }
